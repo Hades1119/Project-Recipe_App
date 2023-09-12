@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function RecipeCreate({ createRecipe }) {
+function RecipeCreate({ createRecipe, recipes }) {
   const initialState = {
     name: "",
     cuisine: "",
@@ -8,6 +8,7 @@ function RecipeCreate({ createRecipe }) {
     ingredients: "",
     preparation: "",
   }
+
 
   const [formData, setFormData] = useState(initialState)
 
@@ -20,7 +21,8 @@ function RecipeCreate({ createRecipe }) {
 
   const handelSubmit = (event) => {
     event.preventDefault();
-    console.log(formData)
+    createRecipe(formData)
+    setFormData(initialState)
   }
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
   // TODO: Add the required input and textarea form elements.

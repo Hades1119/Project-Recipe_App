@@ -20,7 +20,7 @@ function RecipeList() {
           </tr>
         </thead>
         <tbody>
-        
+          
         </tbody>
       </table>
     </div>
