@@ -20,7 +20,7 @@ function App() {
 
   const deleteRecipe = (indexToDelete) => {
     setRecipes((currentRecipes) => {
-      currentRecipes.filter((recipe, index) => index !== indexToDelete)
+      return currentRecipes.filter((recipe, index) => index !== indexToDelete)
     })
   }
 

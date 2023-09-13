@@ -9,6 +9,7 @@ function RecipeView({ recipe, index, deleteRecipe}) {
             <td><img src={photo}/></td>
             <td><p>{ingredients}</p></td>
             <td><p>{preparation}</p></td>
+            <td><button onClick={() => deleteRecipe(index)}>Delete</button></td>
         </tr>
         
     )
