@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -38,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:Hades1119/Project-Recipe_App.git",
+  "author": "Sammy Ali <sammyali11.19@gmail.com>",
+  "license": "MIT"
 }
